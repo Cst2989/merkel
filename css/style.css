@@ -3121,7 +3121,9 @@ p.wp-caption-text {
 	max-width: 960px;
 	width: 100%;
 }
-
+.fb_iframe_widget {
+	bottom: 10px;
+}
 .met_box_header{
 	height: 60px;
 	color: #FFFFFF;
