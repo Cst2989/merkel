@@ -114,57 +114,63 @@ This site is a source of parody, satire, and humor and is for entertainment purp
 						<span class="pull-right met_breadcrumb_text">You Are Here:</span>
 					</div>
 					<div class="met_box_content">
-						<div id="mmd-flight-widget"></div>
-						<script type="text/javascript">(function initWidget() {
-						        var options = {
-						                layout: {
-						                        theme: "momondo"
-						                        , width: "760"
-						                        , height: "300"
-						                },
-						                airports: {
-						                        origin: "",
-						                        destination: "BER"
-						                },
-						                settings: {
-						                        openNewWindow: true,
-						                        domain: "www.momondo.com",
-						                        source: ""
-						                }
-						        };
-						        var settings = options.settings;
-						        var airports = options.airports;
-						        var layout = options.layout;
-						        var encoding = null;
-						        onWidgetLoad = function (f)
-						        {
-						                f("mmd-flight-widget", {
-						                        searchForms: [{
-						                                type: 1,
-						                                searchURL: "http://[DOMAIN][PATH][QUERY]" + (!!settings.source ? "&source=" + settings.source : ""),
-						                                openNewWindow: settings.openNewWindow,
-						                                currency: settings.currency,
-						                                segments: [
-						                                        {
-						                                                airports: [
-						                                                        { code: airports.origin || "" },
-						                                                        { code: airports.destination || "" }
-						                                                ]
-						                                                                                        }
-						                                ]
-						                        }]
-						                });
-						        };
-						        var scr = document.createElement("script");
-						        scr["src"] = "http://" + settings.domain + "/widget/searchform/v1.0/?dimensions=" + (layout.width && layout.height ? (layout.width + "x" + layout.height) : "generic") + "&types=1&callback=onWidgetLoad&theme=" + layout.theme;
-						        var tag = document.getElementsByTagName("head");
-						        if (tag && tag.length)
-						        {
-						                tag = tag[0];
-						                tag.appendChild(scr);
-						        }
-						})();
-						 </script>
+						<div id="mmd-flight-widget"></div> 
+<script type="text/javascript">(function initWidget() {
+	var options = {	
+		layout: {	
+			theme: "momondo"
+			, width: ""	
+			, height: ""	
+		},					
+		airports: {			
+			origin: "",	
+			destination: "BER"	
+		},					
+		settings: {			
+			openNewWindow: true,	
+			domain: "www.momondo.com",		
+			source: ""			
+		}								
+	};									
+	var settings = options.settings;	
+	var airports = options.airports;	
+	var layout = options.layout;		
+	var encoding = null;				
+	onWidgetLoad = function (f)			
+	{									
+		f("mmd-flight-widget", {		
+			searchForms: [{				
+				type: 1,				
+				searchURL: "http://[DOMAIN][PATH][QUERY]" + (!!settings.source ? "&source=" + settings.source : ""),	
+				openNewWindow: settings.openNewWindow,				
+				currency: settings.currency,						
+				segments: [											
+					{												
+						airports: [									
+							{ code: airports.origin || "" },		
+							{ code: airports.destination || "" }	
+						]											
+					},												
+					{												
+						airports: [									
+							{ code: airports.destination || "" },	
+							{ code: airports.origin || "" }		 	
+						]	
+					}		
+				]			
+			}]				
+		});					
+	};						
+	var scr = document.createElement("script");
+	scr["src"] = "http://" + settings.domain + "/widget/searchform/v1.1/?dimensions=" + (layout.width && layout.height ? (layout.width + "x" + layout.height) : "generic") + "&types=1&callback=onWidgetLoad&theme=" + layout.theme;	
+	var tag = document.getElementsByTagName("head");	
+	if (tag && tag.length)		
+	{							
+		tag = tag[0];			
+		tag.appendChild(scr);	
+	}							
+})();
+ </script>
 						<div class="met_split_30"></div>
 
 						<div class="met_box_page_bottom">
