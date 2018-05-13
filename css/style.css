@@ -273,6 +273,10 @@ header nav li a {
 	color: #B0B0B0;
 	padding: 0 10px;
 }
+.twitter-share-button {
+	margin-left:15px;
+	margin-bottom: -10px;
+}
 
 /*-------------------------------
 	Left Side Area
