@@ -1131,7 +1131,7 @@ header nav li a {
 .met_fp_item_text_container{
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	padding: 0 0 55px;
+	padding: 0 0 43px;
 	position: absolute;
 	top: -199px;
 	height: auto;
@@ -1185,7 +1185,6 @@ header nav li a {
 	padding: 0 20px;
 	line-height: 40px;
 	height: 40px;
-	border-top: 1px solid #E8E8E8;
 }
 
 .met_fp_item_share{
