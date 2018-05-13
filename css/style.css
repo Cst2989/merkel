@@ -3124,6 +3124,10 @@ p.wp-caption-text {
 .fb_iframe_widget {
 	bottom: 10px;
 }
+p{
+
+	font-size: 14px;
+}
 .met_box_header{
 	height: 60px;
 	color: #FFFFFF;
